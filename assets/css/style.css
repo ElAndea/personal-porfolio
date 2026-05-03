@@ -9,7 +9,8 @@ html {
 }
 
 :root {
-    --color-light: #f1f1f1;
+    --color-light: #ffffff;
+    --color-grey: #ececec;
     --color-dark: #333;
     --color-link: #2c96fa;
 }
@@ -28,11 +29,11 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     padding: 0.5em 4em;
 }
 
@@ -90,4 +91,63 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: 2em;
+    /* background-color: orange; */
+}
+
+main section {
+    width: 450px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+    line-height: 1.5em;
+    padding: 2em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: var(--color-light);
+    /* background-color: yellow; */
+}
+
+main section h2 {
+    margin-bottom: 1em;
+}
+
+.project ul li {
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+
+.education ul li {
+    list-style: none;
+}
+
+/* Review */
+.review {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+/* Footer */
+.footer {
+    padding: 1em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
