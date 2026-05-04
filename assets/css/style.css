@@ -13,6 +13,7 @@ html {
     --color-grey: #ececec;
     --color-dark: #333;
     --color-link: #2c96fa;
+    --color-sechema : #8BC540;
 }
 
 body {
@@ -115,7 +116,7 @@ main section {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     background-color: var(--color-light);
-    /* background-color: yellow; */
+    border: 1px solid var(--color-grey);
 }
 
 main section h2 {
@@ -132,13 +133,39 @@ main section h2 {
 }
 
 /* Review */
-.review {
+.reviews {
+    width: 100%;
     padding: 4em;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+}
+
+.reviews h2 {
+    margin-bottom: 1em;
+    text-align: left;
+    background-color: var(--color-light);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2em;
+}
+
+.content article {
+    width: 350px;
+    min-height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.5em;
+    padding: 2em;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-light);
 }
 
 /* Footer */
